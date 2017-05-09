@@ -3,13 +3,6 @@ document.
 
 Yufei Li 32014150004
 
-<<<<<<< HEAD
-
-
-
-
 KeZhang 32014150002
 
-=======
 Tianyunzi Chen 32014020199
->>>>>>> refs/remotes/Yufei824/master
