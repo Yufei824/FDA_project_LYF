@@ -1,0 +1,37 @@
+---
+title: "ExchangeRate_ARIMA"
+author: "Yufei Li"
+date: "2017/6/15"
+output: html_document
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r data description, warning=FALSE, message=FALSE}
+library(readxl)
+library(timeDate)
+library(timeSeries)
+
+data <- read_excel("D:/Junior/GitHub/FDA_project_LYF/Data/MonthlyData.xls")
+
+head(data)
+dim(data)
+
+plot(data,type="l")
+
+
+da <- read_excel("D:/Junior/GitHub/FDA_project_LYF/Data/DailyData.xlsx")
+
+head(da)
+dim(da)
+
+#library(quantmod)
+#getSymbols("CNY=X")
+
+#head(CNY=X)
+#dim(CNY=X)
+```
+
+
