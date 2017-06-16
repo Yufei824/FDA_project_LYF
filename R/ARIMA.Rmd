@@ -8,11 +8,14 @@ output: html_document
 ```{r setup, include=FALSE, warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+## Data Description
 ```{r data description, warning=FALSE, message=FALSE}
 library(readxl)
 library(timeDate)
 library(timeSeries)
+library(TSA)
+library(fUnitRoots)
+library(forecast)
 
 data <- read_excel("D:/Junior/GitHub/FDA_project_LYF/Data/MonthlyData.xls")
 
@@ -21,17 +24,26 @@ dim(data)
 
 plot(data,type="l")
 
-
 da <- read_excel("D:/Junior/GitHub/FDA_project_LYF/Data/DailyData.xlsx")
 
 head(da)
 dim(da)
 
-#library(quantmod)
-#getSymbols("CNY=X")
+plot(da,type="l")
+```
+## Model Estimation
+```{r ARIMA model, warning=FALSE, message=FALSE}
+# ADF Test
+origin=da$ExchangeRate
+ex=origin[1:2766] # 2005-07-21 To 2016-07-21
+dex=diff(ex)
+m1=ar(dex,method = 'mle')
+m1$order
+adfTest(ex,lags=12,type=c("c"))
 
-#head(CNY=X)
-#dim(CNY=X)
+# Take difference
+acf(dex)
+pacf(dex)
 ```
 
 

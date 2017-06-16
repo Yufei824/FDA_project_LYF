@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.12)  11 JUN 2017 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.12)  17 JUN 2017 01:05
 entering extended mode
 **./FDA_Group_Project.tex
 (FDA_Group_Project.tex
@@ -259,7 +259,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 \openout3 = `FDA_Group_Project.toc'.
 
- (D:\Latex\tex\latex\listings\lstlang1.sty
+ <monthly.png, id=11, 511.15968pt x 290.58563pt>
+File: monthly.png Graphic file (type png)
+
+<use monthly.png>
+Package pdftex.def Info: monthly.png used on input line 56.
+(pdftex.def)             Requested size: 271.01524pt x 154.06729pt.
+ <daily.png, id=13, 500.62032pt x 290.58563pt>
+File: daily.png Graphic file (type png)
+
+<use daily.png>
+Package pdftex.def Info: daily.png used on input line 64.
+(pdftex.def)             Requested size: 271.01524pt x 157.31738pt.
+ [1]
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+[2 <./monthly.png> <./daily.png>] (D:\Latex\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (D:\Latex\tex\latex\listings\lstlang2.sty
@@ -267,26 +284,33 @@ File: lstlang2.sty 2015/06/04 1.6 listings language file
 )
 (D:\Latex\tex\latex\listings\lstlang3.sty
 File: lstlang3.sty 2015/06/04 1.6 listings language file
-) [1] [2] (FDA_Group_Project.aux)
+) [3]
+Overfull \hbox (65.69989pt too wide) in paragraph at lines 112--114
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][] 
+ []
+
+[4] (FDA_Group_Project.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4927 strings out of 493334
- 62465 string characters out of 3147448
- 161424 words of memory out of 3000000
- 8396 multiletter control sequences out of 15000+200000
- 13439 words of font info for 52 fonts, out of 3000000 for 9000
+ 4968 strings out of 493334
+ 62925 string characters out of 3147448
+ 175375 words of memory out of 3000000
+ 8434 multiletter control sequences out of 15000+200000
+ 13739 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,42p,250b,1640s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,7n,42p,532b,1716s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Latex/fonts/type1/pub
 lic/amsfonts/cm/cmr12.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D
 :/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Latex/fonts/type1/public/am
-sfonts/cm/cmti12.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on FDA_Group_Project.pdf (4 pages, 73471 bytes).
+sfonts/cm/cmti12.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/Lat
+ex/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on FDA_Group_Project.pdf (6 pages, 120725 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
