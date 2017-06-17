@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\setlength{\textheight}{9in}
 \setlength{\textwidth}{6.25in}
 \usepackage{graphicx}
 \usepackage{xcolor}
@@ -39,31 +40,32 @@ escapeinside=`', %将中文放在`和'之间，可以在lstlisting环境中准�
 \begin{abstract}
 The change in the exchange rate reflects the economic situation of a country. The increase or decrease in national income, the development of agriculture, the domestic interest rate, and even the domestic employment are impacted deeply by the change of it. The accuracy of exchange rate forecast has great influence on foreign exchange holders, enterprises' import and export trade, foreign exchange trading of individuals and enterprises, foreign exchange holders and so on. With the continuous development of China's economy, in recent years, China's position in the international community has also been strengthened. At present, the CNY and the dollar as the world's most influential two currencies, the exchange rate fluctuations on the global financial and economic development have played a decisive role in the global market.\\
 
-This paper establishes the GARCH model and ARIMA model of RMB exchange rate fluctuation, and deals with the exchange rate that China has established since 2005. We hope to make a comparison between two of them. Through the establishment and prediction of the measurement model, we find that GARCH(1,1) model is the appropriate one to forecast the exchange rate. And we hope that this conclusion can provide some reference for the central bank's control measures and the exchange rate reform policy.\\
+This paper establishes the GARCH model and ARIMA model of CNY exchange rate fluctuation, and deals with the exchange rate that China has established since 2005. We hope to make a comparison between two of them. Through the establishment and prediction of the measurement model, we find that $GARCH(1,1)$ model is the appropriate one to forecast the exchange rate. And we hope that this conclusion can provide some reference for the central bank's control measures and the exchange rate reform policy.\\
 
-Key words: ARMIA, GARCH, CNY exchange rate, Comparison, Prediction \\
-
+\textbf{Key Words: ARMIA, GARCH, CNY exchange rate, Comparison, Prediction} 
 \end{abstract}
+%\begin{keywords}
 
+%\end{keywords}
 \tableofcontents 
 \newpage
 
 \section{Introduction}
-Exchange rate 
-The Central Committee and the State Council promulgated the reform of the CNY exchange rate formation mechanism on July 21, 2005. The CNY exchange rate was no longer pegged to a single dollar, and fluctuated according to the market supply and demand. After August 11, 2015, the correlation between the CNY and the dollar index has declined. In 2016, the annual depreciation of CNY is about 6.67\%, against a basket of currency depreciation rate is 5.13\%. But the degree of marketization of the CNY in 2016 significantly increased, and gradually drops out of the ``dollar anchor". CNY exchange rate change, as China's international financial relations and even the normal development of economic relations, is an important link and plays an increasingly important role. Therefore, it has a vital significance to correct analysis and forecast the exchange rate and its volatility for the economic subject of financial policy and investment and financing decision-making undoubtedly. Also, to predict the CNY exchange rate better, it is very important to choose a satisfactory model.\\
+An exchange rate between two currencies is the rate at which one currency will be exchanged for another. It is also regarded as the value of one country’s currency in relation to another currency. Exchange rates are determined in the foreign exchange market, which is open to a wide range of different types of buyers and sellers, and where currency trading is continuous. US Dollar(USD,\$) is considered as the most influential currency in the world and Chinese Yuan(CNY,￥) shows increasing power in the international environment. Thus, discussing the relationship between the two currencies is quite meaningful.\\
+ 
+Each country determines the exchange rate regime that will apply to its currency. For example, the currency may be free-floating, pegged (fixed), or a hybrid. The Central Committee and the State Council promulgated the reform of the CNY exchange rate formation mechanism on July 21, 2005. The CNY exchange rate was no longer pegged to a single dollar, and fluctuated according to the market supply and demand. After August 11, 2015, the correlation between the CNY and the dollar index has declined. In 2016, the annual depreciation of CNY is about 6.67\%, against a basket of currency depreciation rate is 5.13\%. But the degree of marketization of the CNY in 2016 significantly increased, and gradually drops out of the ``dollar anchor". CNY exchange rate changes as China's international financial relations and even the normal development of economic relations. It is an important link and plays an increasingly important role. Therefore, it has a vital significance to correct analysis and forecast the exchange rate and its volatility for the economic subject of financial policy and investment and financing decision-making undoubtedly. Also, to predict USD / CNY exchange rate better, it is very important to choose a satisfactory model.\\
 
-Many domestic scholars have studied this based on time series measurement method. Which model of ARIMA model, ARCH model or GARCH model is more appropriate for the exchange rate fluctuations has been controversial. The paper of Zhang Zhongjie (2005) suggested that the exchange rate change was fit into $ARIMA(2,4,5)$ model. Hui Xiaofeng (2005) argued that there was a GARCH effect in the time series of USD / CNY, and the $GARCH(1,1)$ model was suitable for USD / CNY modeling, Xu Shaoqiang and Li Yaming(2007) used the ARMA model to forecast the exchange rate of the euro and yen of a basket of currencies. Then calculated the future exchange rate of the yuan against the US dollar according to the CNY benchmark exchange rate formula, and the forecast results were carried out. Liu Shuling (2008) selected data of the changes in the daily parity of CNY against the US dollar from July 25, 2005 to November 1, 2007. It is estimated that the $GARCH(1,1)$ model and the $ARMA(1,1)$ model are all suitable. Zhai Aimei(2009) showed that the CNY exchange rate volatility had certain leverage effect and the CNY exchange rate did not have the characteristics of floating exchange rate regime through the TGARCH model empirical study. Luo Xun (2009) analysed the exchange rate volatility model established form the data after the reform of China's exchange rate system. The study shows that there existed ARCH effect in China's foreign exchange market and $GARCH(1,1)$ was suitable.\\
+Many domestic scholars have studied this based on time series measurement method. Which model of ARIMA model, ARCH model or GARCH model is more appropriate for the exchange rate fluctuations is controversial. Zhang(2005) suggested that the exchange rate change was fit into $ARIMA(2,4,5)$ model. Hui(2005) argued that there was a GARCH effect in the time series of USD / CNY, and the $GARCH(1,1)$ model was suitable for USD / CNY modeling. Xu and Li(2007) used the ARMA model to forecast the exchange rate of the euro and yen of a basket of currencies and calculated the future exchange rate of the yuan against the US dollar according to the CNY benchmark exchange rate formula. Liu(2008) selected data of the changes in the daily parity of CNY against the US dollar from Jul.25th, 2005 to Nov.1st, 2007 and stated that the $GARCH(1,1)$ model and the $ARMA(1,1)$ model are all suitable. Zhai(2009) showed that the CNY exchange rate volatility had certain leverage effect and the CNY exchange rate did not have the characteristics of floating exchange rate regime through the TGARCH model empirical study. Luo(2009) analysed the exchange rate volatility model established form the data after the reform of China's exchange rate system. The study shows that there existed ARCH effect in China's foreign exchange market and $GARCH(1,1)$ was suitable.\\
 
-It is not difficult to find that the data of previous studies are mostly old, while the appropriation of the model will change with the background of the times and the change of the data. In recent years, the international situation has been changed largely, so we select the latest data ,daily data from July 2005 to June 2017 of CNY exchange rate, to empirically research on the ARCH model, ARIMA model and GARCH model and to compare which forecasting model of CNY is more suitable for China and the development situation of this time.\\
+It is not difficult to point out that the data of previous studies are mostly old, while the appropriation of the model will change with the background of the times and the change of the data. In recent years, the international situation has been changed largely, so we are going to do an empirically research on the ARCH model, ARIMA model and GARCH model and to compare which forecasting model of CNY is more suitable for China and the development situation.\\
 
 \section{Data Source and Data Description}
 \subsection{Data Source}
-We collected the daily and monthly USD / CNY exchange rate from Federal Reserve System, and here is the website:
-https://www.federalreserve.gov/datadownload/Choose.aspx?rel=H10 \\
+We collected monthly USD / CNY exchange rate from 1981-01-01 to 2017-06-01, and daily exchange rate data from 2005-07-21 til 2017-06-09 from Federal Reserve System. According to the system, the data are already wiped out the seasonal effect.\\
 
 \subsection{Data Description}
-We first use monthly USD / CNY exchange rate data from 1981-01-01 to 2017-06-01 to plot a trend figure shown as figure \ref{monthly}. According with the news, China used to set fixed exchange rate mechanism before 2015-07-21, the volatility of exchange rate was small. After that date, China started exchange rate regime reforming: announced a move away from the US dollar peg and used a floating exchange rate. Thus in this paper we will mainly focus on analysing exchange rate after the reform.\\ 
-\begin{figure}
+We first use monthly USD / CNY exchange rate data  to plot a trend figure shown as figure \ref{monthly}. According with the news, China used to set fixed exchange rate mechanism before 2015-07-21, the volatility of exchange rate was small. After that date, China started exchange rate regime reforming: announced a move away from the US dollar peg and used a floating exchange rate. Thus in this paper we will mainly focus on analysing exchange rate after the reform.\\ 
+\begin{figure}[h!]
 \begin{center}
 \caption{CNY/ USD Exchange Rate using monthly data}\label{monthly}
 \includegraphics[width=0.6\textwidth]{monthly.png} 
@@ -71,7 +73,7 @@ We first use monthly USD / CNY exchange rate data from 1981-01-01 to 2017-06-01 
 \end{figure}
 
 We collected the daily USD / CNY exchange rate as our data set. The data we found are already wipe out the seasonal effect so we use them directly in examining the model and further doing forecast. We divided the data into two parts one until July 21st,2016 for examine the model and the data after that date until June 9th,2017 for checking the evaluation of the models. The trend figure is shown in figure \ref{daily}.\\
-\begin{figure}
+\begin{figure}[h!]
 \begin{center}
 \caption{USD / CNY Exchange Rate using daily data}\label{daily}
 \includegraphics[width=0.6\textwidth]{daily.png} 
@@ -112,22 +114,52 @@ adfTest(ex,lags=m1$order,type=c("c"))
 ##     0.0274 
 \end{lstlisting}
 
-However, when we want to further estimate a ARIMA model, the autocorrelation between the 8th difference exchange rate are still significant at lag 13th. Unlike Zhang(2005) who successfully estimated am $ARIMA(2,4,5)$ model using monthly data from Jan. 1989 to Dec.2003, we try to estimate an $ARIMA(6,4,12)$ model with unideal results. Thus, we focus on ARCH and GARCH model in the following research.
+However, when we want to further estimate a ARIMA model, the autocorrelation between the 8th difference exchange rate are still significant at lag 13th. Unlike Zhang(2005) who successfully estimated am $ARIMA(2,4,5)$ model using monthly data from Jan. 1989 to Dec.2003, we try to estimate an $ARIMA(6,4,12)$ model but end with unideal results. Thus, we focus on ARCH and GARCH model in the following research.
 
 \subsection{General Autoregressive Conditional Heteroscedastic Model}
-A General Autoregressive Conditional Heteroscedastic(GARCH) model is an extension of Autoregressive Conditional Heteroscedastic(ARCH) model. It shows the parsimonious of the parameters to adequately describe the volatility process of a series. The most commonly used GARCH model is $GARCH(1,1)$, and its form is like $a_t = \sigma_t \epsilon_t$, $\sigma^2 = \alpha_0 + \alpha_1 a_{t-1}^2 + \beta_1 \sigma_{t-1}^2$ where $0 \leq \alpha_1, \beta_1 \leq 1, (\alpha_1 + \beta_1) <1$. 
+A General Autoregressive Conditional Heteroscedastic(GARCH) model is an extension of Autoregressive Conditional Heteroscedastic(ARCH) model. It shows the parsimonious of the parameters to adequately describe the volatility process of a series. The most commonly used GARCH model is $GARCH(1,1)$, and its form is like $a_t = \sigma_t \epsilon_t$, $\sigma^2 = \alpha_0 + \alpha_1 a_{t-1}^2 + \beta_1 \sigma_{t-1}^2$ where $0 \leq \alpha_1, \beta_1 \leq 1, (\alpha_1 + \beta_1) <1$.\\ 
+
+We first estimate an ARCH(1) model, results are like
+\begin{eqnarray*}
+r_t &=& 1.9966 + a_t\\
+\sigma_t^2 &=& 6.055*10^{-07} + 1.000 a_{t-1}^2 
+\end{eqnarray*}
+\begin{figure}[h!]
+\begin{center}
+\caption{ARCH(1)}\label{ARCH(1)}
+\includegraphics[width=0.6\textwidth]{arch1a.png} 
+\end{center}
+\end{figure}
+
+And an ARCH(3) model,
+\begin{eqnarray*}
+r_t &=& 1.9966 + a_t\\
+\sigma_t^2 &=& 5.675*10^{-7} + 0.9953 a_{t-1}^2 + 1.000*10^{-8} a_{t-2}^2 +0.01381 a_{t-3}^2
+\end{eqnarray*}
+\begin{figure}[h!]
+\begin{center}
+\caption{ARCH(3)}\label{ARCH(3)}
+\includegraphics[width=0.6\textwidth]{arch3a.png} 
+\end{center}
+\end{figure}
+
+Also an GARCH(1,1) model,
+\begin{eqnarray*}
+r_t &=& 2.0576 + a_t\\
+\sigma_t^2 &=& 6.144*10^{-9} + 0.1619 a_{t-1}^2 + 0.8440 \sigma_{t-3}^2
+\end{eqnarray*}
+\begin{figure}[h!]
+\begin{center}
+\caption{GARCH(1,1)}\label{GARCH(1,1)}
+\includegraphics[width=0.6\textwidth]{garch11a.png} 
+\end{center}
+\end{figure}
 
 \section{Estimation and Result Analysis}
-ARCH(3)
-ARCH(1)
-GARCH(1,1)
-Having seen the results, we can find the GARCH(1,1) model have the highest likelihood with the lowest AIC and BIC, while the considering the alpha, ARCH1 model is also appropriate.
-Further, Ljung box test is needed to decide which model is better.
-If p value is less than 0.05, we can reject the null hypothesis, seeing the model is appropriate.
-As we can see from the results, GARCH(1,1) model is suitable for the volatility and mean equation.
+As the results above, we can find the GARCH(1,1) model have the highest likelihood with the lowest AIC and BIC, while the considering the alpha, ARCH1 model is also appropriate. Further, Ljung box test is needed to decide which model is better. If p value is less than 0.05, we can reject the null hypothesis, seeing the model is appropriate. As we can see from the results, GARCH(1,1) model is suitable for the volatility and mean equation.
 
 Here is the prediction we made
-\begin{figure}
+\begin{figure}[h!]
 \begin{center}
 \caption{point forecast}\label{pre}
 \includegraphics[width=0.6\textwidth]{pre.png}
@@ -137,14 +169,22 @@ Here is the prediction we made
 
 \section{Conclusions}\label{conclusions}
 Having seen from the result, the test results showed the detection model possesses preferable practicability. The exchange rate volatility equation is significant in GARCH model.
-This method have little error, the estimate result is pretty ideal. According to the analysis, we can see the exchange rate fluctuated remarkably, which is not normal distribution. According to the results, it seems feasible to use this model to predict the exchange rate revealing the upward tendency for the CNY. Along with the SDR, CNY gradually move in the line with the trend of the international financial market, while the non-stationary means it still needs to take measures to prevent the risk of the sharp appreciation and depreciation.
+This method have little error, the estimate result is pretty ideal. According to the analysis, we can see the exchange rate fluctuated remarkably, which is not normal distribution. According to the results, it seems feasible to use this model to predict the exchange rate revealing the upward tendency for the CNY. Along with the SDR, CNY gradually move in the line with the trend of the international financial market, while the non-stationary means it still needs to take measures to prevent the risk of the sharp appreciation and depreciation.\\
 
 
-\section{Reference}
 \begin{thebibliography}{9}
-\bibitem[Doe]{doe} \emph{First and last \LaTeX{} example.},
-John Doe 50 B.C.
- 
+\bibitem  Fang-Mei Tseng,Gwo-Hshiung Tzeng,Hsiao-Cheng Yu,Benjamin J. C. Yuan. Fuzzy ARIMA model for forecasting the foreign exchange market.[J]. Fuzzy Sets and Systems,2001,118:.
+\bibitem  Federal Reserve System. https://www.federalreserve.gov/datadownload/Choose.aspx?rel=H10 
+\bibitem  Hui X F, Xing L. Analysis of the RMB exchange rate formation mechanism based on the currency basket[C]. International Conference on Management Science \& Engineering. IEEE, 2014:1101-1105. 
+\bibitem  Liu S L, Wen T, Jun G E. Forecasting and the Choice of RMB Exchange Rate Model——Base on ARIMA Model and GARCH Model[J]. Technoeconomics \& Management Research, 2008.
+\bibitem  Luo X. The Research of the Fluctuation Rules of USD/RMB Exchange Rate Series Based on GARCH Model[J]. Application of Statistics \& Management, 2009, 28(2):295-300.
+\bibitem  Marco Mele. A “TIME SERIES” APPROACH ON THE CHINESE EXCHANGE RATE REGIME[J]. Economic Research,2010,233:.
+\bibitem  O'Sullivan, Arthur; Steven M. Sheffrin (2003). Economics: Principles in action. Upper Saddle River, New Jersey 07458: Pearson Prentice Hall. p. 458.ISBN 0-13-063085-3. 
+\bibitem  Tsay, Ruey S. Analysis of Financial Time Series. Analysis of financial time series. Wiley, 2005:5880-5885.
+\bibitem  Wu M Q, The study on the fluctuation trend of US dollar to RMB exchange rate -- Based on GARCH model [J]. Journal of Tongling University. 2016,06:27-30+55.
+\bibitem  Xu S Q, Li Y M.Prediction of RMB exchange rate with reference to a basket of currencies -- an empirical method based on ARMA model. [J]. World Economic Papers. 2007(03)
+\bibitem  Yang S F. Time series modeling and prediction [D]. Tsinghua University. 2014.
+\bibitem  Zhai A M. The Empirical Research of RMB Exchange Rate Volatility Based on GARCH Model[J]. Technoeconomics \& Management Research, 2010.
 \end{thebibliography}
 
 \section{Appendix}

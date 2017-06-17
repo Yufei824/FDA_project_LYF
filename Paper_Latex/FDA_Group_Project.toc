@@ -4,9 +4,8 @@
 \contentsline {subsection}{\numberline {2.2}Data Description}{3}
 \contentsline {section}{\numberline {3}Model Specification}{4}
 \contentsline {subsection}{\numberline {3.1}Autoregressive Integrated Moving Average Model}{4}
-\contentsline {subsection}{\numberline {3.2}General Autoregressive Conditional Heteroscedastic Model}{6}
-\contentsline {section}{\numberline {4}Estimation and Result Analysis}{6}
-\contentsline {section}{\numberline {5}Conclusions}{6}
-\contentsline {section}{\numberline {6}Reference}{6}
-\contentsline {section}{\numberline {7}Appendix}{6}
-\contentsline {subsection}{\numberline {7.1}Additional R code}{6}
+\contentsline {subsection}{\numberline {3.2}General Autoregressive Conditional Heteroscedastic Model}{5}
+\contentsline {section}{\numberline {4}Estimation and Result Analysis}{7}
+\contentsline {section}{\numberline {5}Conclusions}{7}
+\contentsline {section}{\numberline {6}Appendix}{9}
+\contentsline {subsection}{\numberline {6.1}Additional R code}{9}
