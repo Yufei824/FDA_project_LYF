@@ -111,9 +111,21 @@ However, when we want to further estimate a ARIMA model, the autocorrelation bet
 A General Autoregressive Conditional Heteroscedastic(GARCH) model is an extension of Autoregressive Conditional Heteroscedastic(ARCH) model. It shows the parsimonious of the parameters to adequately describe the volatility process of a series. The most commonly used GARCH model is $GARCH(1,1)$, and its form is like $a_t = \sigma_t \epsilon_t$, $\sigma^2 = \alpha_0 + \alpha_1 a_{t-1}^2 + \beta_1 \sigma_{t-1}^2$ where $0 \leq \alpha_1, \beta_1 \leq 1, (\alpha_1 + \beta_1) <1$. 
 
 \section{Estimation and Result Analysis}
+ARCH(3)
+ARCH(1)
+GARCH(1,1)
+Having seen the results, we can find the GARCH(1,1) model have the highest likelihood with the lowest AIC and BIC, while the considering the alpha, ARCH1 model is also appropriate.
+Further, Ljung box test is needed to decide which model is better.
+If p value is less than 0.05, we can reject the null hypothesis, seeing the model is appropriate.
+As we can see from the results, GARCH(1,1) model is suitable for the volatility and mean equation.
+
+Here is the prediction we made
+
 
 \section{Conclusions}\label{conclusions}
-There is no longer \LaTeX{} example which was written by \cite{doe}.
+Having seen from the result, the test results showed the detection model possesses preferable practicability. The exchange rate volatility equation is significant in GARCH model.
+This method have little error, the estimate result is pretty ideal. According to the analysis, we can see the exchange rate fluctuated remarkably, which is not normal distribution. According to the results, it seems feasible to use this model to predict the exchange rate revealing the upward tendency for the CNY. Along with the SDR, CNY gradually move in the line with the trend of the international financial market, while the non-stationary means it still needs to take measures to prevent the risk of the sharp appreciation and depreciation.
+
 
 \section{Reference}
 \begin{thebibliography}{9}
