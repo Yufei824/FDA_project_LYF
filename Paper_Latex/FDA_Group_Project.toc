@@ -1,12 +1,12 @@
-\contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}Data Source and Data Description}{1}
-\contentsline {subsection}{\numberline {2.1}Data Source}{1}
-\contentsline {subsection}{\numberline {2.2}Data Description}{1}
-\contentsline {section}{\numberline {3}Model Specification}{2}
-\contentsline {subsection}{\numberline {3.1}ARIMA}{3}
-\contentsline {subsection}{\numberline {3.2}GARCH}{3}
-\contentsline {section}{\numberline {4}Estimation and Result Analysis}{3}
-\contentsline {section}{\numberline {5}Conclusions}{3}
-\contentsline {section}{\numberline {6}Reference}{3}
-\contentsline {section}{\numberline {7}Appendix}{3}
-\contentsline {subsection}{\numberline {7.1}Additional R code}{3}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Data Source and Data Description}{3}
+\contentsline {subsection}{\numberline {2.1}Data Source}{3}
+\contentsline {subsection}{\numberline {2.2}Data Description}{3}
+\contentsline {section}{\numberline {3}Model Specification}{4}
+\contentsline {subsection}{\numberline {3.1}Autoregressive Integrated Moving Average Model}{4}
+\contentsline {subsection}{\numberline {3.2}General Autoregressive Conditional Heteroscedastic Model}{6}
+\contentsline {section}{\numberline {4}Estimation and Result Analysis}{6}
+\contentsline {section}{\numberline {5}Conclusions}{6}
+\contentsline {section}{\numberline {6}Reference}{6}
+\contentsline {section}{\numberline {7}Appendix}{6}
+\contentsline {subsection}{\numberline {7.1}Additional R code}{6}

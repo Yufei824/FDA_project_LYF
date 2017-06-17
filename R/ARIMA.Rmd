@@ -31,19 +31,41 @@ dim(da)
 
 plot(da,type="l")
 ```
+
 ## Model Estimation
-```{r ARIMA model, warning=FALSE, message=FALSE}
-# ADF Test
+```{r Basic, warning=FALSE, message=FALSE}
 origin=da$ExchangeRate
 ex=origin[1:2766] # 2005-07-21 To 2016-07-21
+acf(ex)
+pacf(ex)
+
 dex=diff(ex)
 m1=ar(dex,method = 'mle')
 m1$order
-adfTest(ex,lags=12,type=c("c"))
+
+# ADF Test
+adfTest(ex,lags=m1$order,type=c("c"))
 
 # Take difference
-acf(dex)
-pacf(dex)
+dex2=diff(dex)
+dex3=diff(dex2)
+dex4=diff(dex3)
+dex5=diff(dex4)
+dex6=diff(dex5)
+dex7=diff(dex6)
+dex8=diff(dex7)
+acf(dex8)
+pacf(dex8)
+```
+
+```{r ARIMA model, warning=FALSE, message=FALSE}
+#ARIMA
+m2=arima(ex,c(6,4,12))
+m2
+Box.test(m2$residuals,lag=30,type = "Ljung")
+pv2=1-pchisq(776.93,12)
+pv2
+
 ```
 
 
