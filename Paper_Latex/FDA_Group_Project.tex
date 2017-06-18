@@ -18,7 +18,8 @@ rulesepcolor=\color{red!20!green!20!blue!20},
 basicstyle=\ttfamily\small,
 escapeinside=`', %将中文放在`和'之间，可以在lstlisting环境中准确的显示中文
 }
-\title{Financial Data Analysis Group Project\\
+\title{\textbf{Financial Data Analysis Group Project}\\
+Using ARCH and GARCH Model to Estimate and Forecast CNY Exchange Rate
 }
 \author{Yufei Li  \\
 	32014150004  \\
@@ -52,9 +53,9 @@ This paper establishes the ARCH model and GARCH model of USD / CNY exchange rate
 \newpage
 
 \section{Introduction}
-An exchange rate between two currencies is the rate at which one currency will be exchanged for another. It is also regarded as the value of one country’s currency in relation to another currency. Exchange rates are determined in the foreign exchange market, which is open to a wide range of different types of buyers and sellers, and where currency trading is continuous. US Dollar(USD) is considered as the most influential currency in the world and many countries have anchored their foreign exchange rate to the dollar. While Chinese Yuan(CNY) shows an increasing power in the international environment. Thus, discussing the relationship between the two currencies is quite meaningful.\\
+An exchange rate between two currencies is the rate at which one currency will be exchanged for another. It is also regarded as the value of one country's currency in relation to another currency. Exchange rates are determined in the foreign exchange market, which is open to a wide range of different types of buyers and sellers, and where currency trading is continuous. US Dollar(USD) is considered as the most influential currency in the world and many countries have anchored their foreign exchange rate to the dollar. While Chinese Yuan(CNY) shows an increasing power in the international environment. Thus, discussing the relationship between the two currencies is quite meaningful.\\
  
-Each country determines the exchange rate regime that will apply to its currency. For example, the currency may be free-floating, pegged (fixed), or a hybrid. The Central Committee and the State Council promulgated the reform of the CNY exchange rate formation mechanism on July 21, 2005. The CNY exchange rate was no longer pegged to a single dollar, and fluctuated according to the market supply and demand. After August 11, 2015, the correlation between the CNY and the dollar index has declined. In 2016, the annual depreciation of CNY is about 6.67\%, against a basket of currency depreciation rate is 5.13\%. But the degree of marketization of the CNY in 2016 significantly increased, and gradually drops out of the ``dollar anchor". CNY exchange rate changes as China's international financial relations and even the normal development of economic relations. It is an important link and plays an increasingly important role. Therefore, it has a vital significance to correct analysis and forecast the exchange rate and its volatility for the economic subject of financial policy and investment and financing decision-making undoubtedly. Thus, it is important to choose a satisfactory model to better analyse USD / CNY exchange rate.\\
+Each country determines the exchange rate regime that will apply to its currency. For example, the currency may be free-floating, pegged (fixed), or a hybrid. The Central Committee and the State Council promulgated the reform of the CNY exchange rate formation mechanism on July 21, 2005. The CNY exchange rate was no longer pegged to a single dollar, and fluctuated according to the market supply and demand. After August 11, 2015, the correlation between the CNY and the dollar index has declined. In 2016, the annual depreciation of CNY is about $6.67\%$, against a basket of currency depreciation rate is $5.13\%$. But the degree of marketization of the CNY in 2016 significantly increased, and gradually drops out of the ``dollar anchor". CNY exchange rate changes as China's international financial relations and even the normal development of economic relations. It is an important link and plays an increasingly important role. Therefore, it has a vital significance to correct analysis and forecast the exchange rate and its volatility for the economic subject of financial policy and investment and financing decision-making undoubtedly. Thus, it is important to choose a satisfactory model to better analyse USD / CNY exchange rate.\\
 
 Many domestic scholars have studied this based on time series measurement method. Which model of ARIMA model, ARCH model or GARCH model is more appropriate for the exchange rate fluctuations is controversial. Zhang(2005) suggested that the exchange rate change was fit into $ARIMA(2,4,5)$ model. Hui(2005) argued that there was a GARCH effect in the time series of USD / CNY, and the $GARCH(1,1)$ model was suitable for USD / CNY modeling. Xu and Li(2007) used the ARMA model to forecast the exchange rate of the euro and yen of a basket of currencies and calculated the future exchange rate of the yuan against the US dollar according to the CNY benchmark exchange rate formula. Liu(2008) selected data of the changes in the daily parity of CNY against the US dollar from Jul.25th, 2005 to Nov.1st, 2007 and stated that the $GARCH(1,1)$ model and the $ARMA(1,1)$ model are all suitable. Zhai(2009) showed that the CNY exchange rate volatility had certain leverage effect and the CNY exchange rate did not have the characteristics of floating exchange rate regime through the TGARCH model empirical study. Luo(2009) analysed the exchange rate volatility model established form the data after the reform of China's exchange rate system. The study shows that there existed ARCH effect in China's foreign exchange market and $GARCH(1,1)$ was suitable for estimating.\\
 
@@ -73,7 +74,7 @@ We first use monthly USD / CNY exchange rate data  to plot a trend figure shown 
 \end{center}
 \end{figure}
 
-We collected the daily USD / CNY exchange rate as our data set. The data we found are already wiped out the seasonal effect so we use them directly in examining the model and further doing forecast. We divided the data into two parts one until July 21st,2016 for examine the model and the data after that date until June 9th,2017 for checking the evaluation of the models. The trend figure is shown in figure \ref{daily}.\\
+We collected the daily USD / CNY exchange rate as our data set. The data we found are already wiped out the seasonal effect so we use them directly in examining the model and further doing forecast. We divided the data into two parts one until Jul. 21st, 2016 for examine the model and the data after that date until Jun. 9th, 2017 for checking the evaluation of the models. The trend figure is shown in figure \ref{daily}.\\
 \begin{figure}[h!]
 \begin{center}
 \caption{USD / CNY Exchange Rate using daily data}\label{daily}
@@ -87,7 +88,7 @@ There are usually two ways in analysing the exchange rate in time series: ARIMA 
 \subsection{Autoregressive Integrated Moving Average Model}
 An Autoregressive Integrated Moving Average(ARIMA) model is a generalization of an Autoregressive Moving Average(ARMA) model with unit roots. Basically an ARMA model combines the ideas of Autocorrelation(AR) model and Moving Average(MA) model but it models with less number of parameters, achieving parsimony in the model. The general $ARMA(p,q)$ form is like $r_t = \phi_0 + \sum_{i=1}^p \phi_i r_{t-i} + a_t - \sum_{i=1}^q \theta_i a_{t-i}$ where ${a_t}$ is a white noise series. An AR model forms a multiple linear regression model with lagged values serving as the explanatory variables. A MA model is an infinite-order AR model with some parameter constraints. And the ``I" of Integrated indicates data values have been replaced with the difference between their values and the previous values.\\
 
-To begin with, we want to check if the daily exchange rate series exists an unit root in the serial. As mentioned before, we first use the first $2766$ data (from 2005-07-21 to 2016-07-21) to check the ACF of series. From figure \ref{ACF}, we can say that ACF shows a strong autocorrelation which almost does not decay indicates the existence of unit root. We also run an ADF-test double-check the unit-root result. The ADF-test statistic is $-3.1048$ with p-value $0.0274$, which is larger than 0.01, so the unit-root hypothesis cannot be rejected under 1\% significant level.\\
+To begin with, we want to check if the daily exchange rate series exists an unit root in the serial. As mentioned before, we first use the first $2766$ data (from 2005-07-21 to 2016-07-21) to check the ACF of series. From figure \ref{ACF}, we can say that ACF shows a strong autocorrelation which almost does not decay indicates the existence of unit root. We also run an ADF-test double-check the unit-root result. The ADF-test statistic is $-3.1048$ with p-value $0.0274$, which is larger than $0.01$, so the unit-root hypothesis cannot be rejected under $1\%$ significant level.\\
 \begin{figure}[h!]
 \begin{center}
 \caption{ACF results of exchange rate series}\label{ACF}
@@ -115,7 +116,7 @@ adfTest(ex,lags=m1$order,type=c("c"))
 ##     0.0274 
 \end{lstlisting}
 
-However, when we want to further estimate a ARIMA model, the autocorrelation between the 8th difference exchange rate are still significant at lag 13th. Unlike Zhang(2005) who successfully estimated am $ARIMA(2,4,5)$ model using monthly data from Jan. 1989 to Dec.2003, our estimation using daily data, an $ARIMA(6,4,12)$ model, failed to adequate estimate the results. Thus, we focus on ARCH and GARCH model in the following research.
+However, when we want to further estimate a ARIMA model, the autocorrelation between the 8th difference exchange rate are still significant at lag 13th. Unlike Zhang(2005) who successfully estimated am $ARIMA(2,4,5)$ model using monthly data from Jan. 1989 to Dec. 2003, our estimation using daily data, an $ARIMA(6,4,12)$ model, failed to adequately estimate the results. Thus, we focus on ARCH and GARCH model in the following research.
 
 \subsection{Autoregressive Conditional Heteroscedastic Model}
 The basic idea of Autoregressive Conditional Heteroscedastic(ARCH) model is that ${a_t}$is a serially uncorrelated but dependent, and the dependence of $a_t$ can be described by a simple quadratic function of the lagged value. An $ARCH(m)$ model is like
@@ -124,7 +125,7 @@ a_t &=& \sigma_t \epsilon_t \\
 \sigma_t^2 &=& \alpha_0 + \alpha_1 a_{t-1}^2 + \cdots +\alpha_m a_{t-m}^2
 \end{eqnarray*}
 
-We first estimate an ARCH(1) model, results are like
+Consider previous researches' experience, we first estimate an ARCH(1) model, results are like
 \begin{eqnarray*}
 r_t &=& 1.9966 + a_t\\
 \sigma_t^2 &=& 6.055*10^{-07} + 1.000 a_{t-1}^2 
@@ -136,7 +137,7 @@ r_t &=& 1.9966 + a_t\\
 \end{center}
 \end{figure}
 
-And an ARCH(3) model,
+And also an ARCH(3) model,
 \begin{eqnarray*}
 r_t &=& 1.9966 + a_t\\
 \sigma_t^2 &=& 5.675*10^{-7} + 0.9953 a_{t-1}^2 + 1.000*10^{-8} a_{t-2}^2 +0.01381 a_{t-3}^2
@@ -152,7 +153,7 @@ r_t &=& 1.9966 + a_t\\
 \subsection{General Autoregressive Conditional Heteroscedastic Model}
 A General Autoregressive Conditional Heteroscedastic(GARCH) model is an extension of Autoregressive Conditional Heteroscedastic(ARCH) model. It shows the parsimonious of the parameters to adequately describe the volatility process of a series. The most commonly used GARCH model is $GARCH(1,1)$, and its form is like $a_t = \sigma_t \epsilon_t$, $\sigma^2 = \alpha_0 + \alpha_1 a_{t-1}^2 + \beta_1 \sigma_{t-1}^2$ where $0 \leq \alpha_1, \beta_1 \leq 1, (\alpha_1 + \beta_1) <1$.\\ 
 
-Also an GARCH(1,1) model,
+Thus we estimate an GARCH(1,1) model,
 \begin{eqnarray*}
 r_t &=& 2.0576 + a_t\\
 \sigma_t^2 &=& 6.144*10^{-9} + 0.1619 a_{t-1}^2 + 0.8440 \sigma_{t-3}^2
@@ -165,9 +166,9 @@ r_t &=& 2.0576 + a_t\\
 \end{figure}
 
 \section{Estimation and Result Analysis}
-As the results above, we can find the GARCH(1,1) model have the highest likelihood with the lowest AIC and BIC, while the considering the alpha, ARCH1 model is also appropriate. Further, Ljung box test is needed to decide which model is better. Ljung box test can be used to test the validity of the mean equation and the volatility equation by checking the autocorrelation between the standardized residuals. If p value is less than 0.05, we can reject the null hypothesis, seeing the model is appropriate. As we can see from the results, GARCH(1,1) model is suitable for the volatility and mean equation.
+As the results above, we can find the $GARCH(1,1)$ model have the highest likelihood with the lowest AIC and BIC, while the considering the significance of parameters $\alpha_2$ and $\alpha_3$, $ARCH(1)$ model is more appropriate than the $ARCH(3)$ model. Further, Ljung box test is needed to decide which model is better. Ljung box test can be used to test the validity of the mean equation and the volatility equation by checking the autocorrelation between the standardized residuals. If p value is less than $0.05$, we can reject the null hypothesis, seeing the model is appropriate. As we can see from the results, $GARCH(1,1)$ model is suitable for the volatility and mean equation.\\
 
-Here is the prediction we made
+The prediction we make using the estimated $GARCH(1,1)$ model is like figure \ref{pre}.
 \begin{figure}[h!]
 \begin{center}
 \caption{point forecast}\label{pre}
@@ -177,7 +178,7 @@ Here is the prediction we made
 
 
 \section{Conclusions}
-While what really disappoint us is that the forecast is not consistent with the actual value, shown as figure \ref{volatility}.Having seen from the result, the test results showed the detection model did not possesses preferable practicability. The exchange rate volatility shows the forecast result is not consistent with the actual series in GARCH model.\\
+While what really disappoint us is that the forecast is not consistent with the actual value, shown as figure \ref{volatility}. Having seen from the result, the test results showed the detection model did not possesses preferable practicability. The exchange rate volatility shows the forecast result is not consistent with the actual series in GARCH model.\\
 \begin{figure}[h!]
 \begin{center}
 \caption{}\label{volatility}
@@ -185,7 +186,7 @@ While what really disappoint us is that the forecast is not consistent with the 
 \end{center}
 \end{figure}
 
-This method have error, which might be the factor that make the estimate result is not pretty ideal. According to the analysis, we can see the exchange rate fluctuated remarkably, which is not normal distribution. According to the results, it seems infeasible to use this model to predict the exchange rate revealing the upward tendency for the CNY. Along with the SDR(Special Drawing Right), CNY gradually move in the line with the trend of the international financial market, while the non-stationary means it still needs to take measures to prevent the risk of the sharp appreciation and depreciation.\\
+This method have error, which might be the factor that make the estimate result is not pretty ideal. Due to time limitation, we are not sure what problem causes this inaccuracy result, which we may try to discuss in the future. According to the analysis, we can see the exchange rate fluctuated remarkably, which is not normal distribution. It seems infeasible to use this model to predict the exchange rate revealing the upward tendency for the CNY. Along with the Special Drawing Right(SDR), CNY gradually move in the line with the trend of the international financial market, while the non-stationary means it still needs to take measures to prevent the risk of the sharp appreciation and depreciation.\\
 
 \begin{thebibliography}{9}
 \bibitem{}  Fang-Mei Tseng,Gwo-Hshiung Tzeng,Hsiao-Cheng Yu,Benjamin J. C. Yuan. Fuzzy ARIMA model for forecasting the foreign exchange market.[J]. Fuzzy Sets and Systems,2001,118:.
