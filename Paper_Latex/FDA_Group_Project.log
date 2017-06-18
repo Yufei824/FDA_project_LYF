@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.12)  18 JUN 2017 01:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.12)  18 JUN 2017 22:28
 entering extended mode
 **./FDA_Group_Project.tex
 (FDA_Group_Project.tex
@@ -170,26 +170,53 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
  (FDA_Group_Project.aux
 
-LaTeX Warning: Label `F' multiply defined.
+LaTeX Warning: Label `' multiply defined.
 
 
-LaTeX Warning: Label `L' multiply defined.
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
 
 )
 \openout1 = `FDA_Group_Project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
  (D:\Latex\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
@@ -249,24 +276,24 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \c@lstlisting=\count114
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
 
 (D:\Latex\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
  (D:\Latex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
@@ -278,58 +305,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-Missing character: There is no Ô in font cmr12!
-Missing character: There is no ø in font cmr12!
-Missing character: There is no • in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 <monthly.png, id=18, 511.15968pt x 290.58563pt>
 File: monthly.png Graphic file (type png)
  <use monthly.png>
-Package pdftex.def Info: monthly.png used on input line 71.
+Package pdftex.def Info: monthly.png used on input line 72.
 (pdftex.def)             Requested size: 271.01524pt x 154.06729pt.
 
 <daily.png, id=20, 500.62032pt x 290.58563pt>
 File: daily.png Graphic file (type png)
  <use daily.png>
-Package pdftex.def Info: daily.png used on input line 79.
+Package pdftex.def Info: daily.png used on input line 80.
 (pdftex.def)             Requested size: 271.01524pt x 157.31738pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3 <./monthly.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+ [3 <./monthly.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 <ex_acf.png, id=25, 514.17094pt x 340.27126pt>
 File: ex_acf.png Graphic file (type png)
  <use ex_acf.png>
-Package pdftex.def Info: ex_acf.png used on input line 93.
+Package pdftex.def Info: ex_acf.png used on input line 94.
 (pdftex.def)             Requested size: 271.01524pt x 179.3564pt.
 
 (D:\Latex\tex\latex\listings\lstlang1.sty
@@ -340,52 +360,50 @@ File: lstlang2.sty 2015/06/04 1.6 listings language file
 )
 (D:\Latex\tex\latex\listings\lstlang3.sty
 File: lstlang3.sty 2015/06/04 1.6 listings language file
-)
+) [4 <./daily.png>] [5 <./ex_acf.png>] <arch1a.png, id=41, 298.61563pt x 167.12
+437pt>
+File: arch1a.png Graphic file (type png)
+ <use arch1a.png>
+Package pdftex.def Info: arch1a.png used on input line 135.
+(pdftex.def)             Requested size: 271.01524pt x 151.68813pt.
+
+<arch3a.png, id=42, 311.66437pt x 160.09813pt>
+File: arch3a.png Graphic file (type png)
+ <use arch3a.png>
+Package pdftex.def Info: arch3a.png used on input line 147.
+(pdftex.def)             Requested size: 271.01524pt x 139.21826pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./daily.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-[5 <./ex_acf.png>] <arch1a.png, id=41, 298.61563pt x 167.12437pt>
-File: arch1a.png Graphic file (type png)
-
-<use arch1a.png>
-Package pdftex.def Info: arch1a.png used on input line 130.
-(pdftex.def)             Requested size: 271.01524pt x 151.68813pt.
- <arch3a.png, id=42, 311.66437pt x 160.09813pt>
-File: arch3a.png Graphic file (type png)
-
-<use arch3a.png>
-Package pdftex.def Info: arch3a.png used on input line 142.
-(pdftex.def)             Requested size: 271.01524pt x 139.21826pt.
- <garch11a.png, id=43, 297.61188pt x 168.12813pt>
+<garch11a.png, id=43, 297.61188pt x 168.12813pt>
 File: garch11a.png Graphic file (type png)
-
-<use garch11a.png>
-Package pdftex.def Info: garch11a.png used on input line 154.
+ <use garch11a.png>
+Package pdftex.def Info: garch11a.png used on input line 163.
 (pdftex.def)             Requested size: 271.01524pt x 153.1097pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6 <./arch1a.png> <./arch3a.png>] <pre.png, id=49, 313.17pt x 121.45375pt>
+ [6 <./arch1a.png>] <pre.png, id=48, 313.17pt x 121.45375pt>
 File: pre.png Graphic file (type png)
-
-<use pre.png>
-Package pdftex.def Info: pre.png used on input line 165.
+ <use pre.png>
+Package pdftex.def Info: pre.png used on input line 174.
 (pdftex.def)             Requested size: 271.01524pt x 105.10791pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
 
  []
 
-[7 <./garch11a.png> <./pre.png>]
-Overfull \hbox (40.07129pt too wide) in paragraph at lines 177--178
-[]\OT1/cmr/m/n/12 ederal Re-serve Sys-tem. https://www.federalreserve.gov/datad
-ownload/Choose.aspx?rel=H10 
+[7 <./arch3a.png> <./garch11a.png>]
+Overfull \hbox (46.76012pt too wide) in paragraph at lines 186--187
+[]\OT1/cmr/m/n/12 Federal Re-serve Sys-tem. https://www.federalreserve.gov/data
+download/Choose.aspx?rel=H10 
  []
 
 Missing character: There is no ‚ in font cmr12!
@@ -400,50 +418,50 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
-[8]
-Overfull \hbox (65.69989pt too wide) in paragraph at lines 200--202
+[8 <./pre.png>]
+Overfull \hbox (65.69989pt too wide) in paragraph at lines 210--212
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.0044pt too wide) in paragraph at lines 207--209
+Overfull \hbox (45.0044pt too wide) in paragraph at lines 217--219
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][] 
  []
 
 [9]
-Overfull \hbox (31.2074pt too wide) in paragraph at lines 237--238
+Overfull \hbox (31.2074pt too wide) in paragraph at lines 247--248
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (10.5119pt too wide) in paragraph at lines 238--239
+Overfull \hbox (10.5119pt too wide) in paragraph at lines 248--249
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (10.5119pt too wide) in paragraph at lines 239--240
+Overfull \hbox (10.5119pt too wide) in paragraph at lines 249--250
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (3.6134pt too wide) in paragraph at lines 240--241
+Overfull \hbox (3.6134pt too wide) in paragraph at lines 250--251
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (45.0044pt too wide) in paragraph at lines 241--242
+Overfull \hbox (45.0044pt too wide) in paragraph at lines 251--252
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (10.5119pt too wide) in paragraph at lines 242--243
+Overfull \hbox (10.5119pt too wide) in paragraph at lines 252--253
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (65.69989pt too wide) in paragraph at lines 247--249
+Overfull \hbox (65.69989pt too wide) in paragraph at lines 257--259
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -453,13 +471,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5047 strings out of 493334
- 63696 string characters out of 3147448
- 192731 words of memory out of 3000000
- 8511 multiletter control sequences out of 15000+200000
+ 5038 strings out of 493334
+ 63668 string characters out of 3147448
+ 200557 words of memory out of 3000000
+ 8502 multiletter control sequences out of 15000+200000
  13040 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,7n,42p,1377b,2222s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,7n,42p,1392b,1723s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Latex/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <D:/Latex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Latex/fonts/type1/public
@@ -467,7 +485,7 @@ lic/amsfonts/cm/cmex10.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 atex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Latex/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Latex/
 fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on FDA_Group_Project.pdf (12 pages, 235382 bytes).
+Output written on FDA_Group_Project.pdf (12 pages, 236452 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
