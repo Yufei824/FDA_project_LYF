@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.12)  18 JUN 2017 22:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.12)  18 JUN 2017 22:56
 entering extended mode
 **./FDA_Group_Project.tex
 (FDA_Group_Project.tex
@@ -395,13 +395,18 @@ Package pdftex.def Info: pre.png used on input line 174.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--182
+<forecast.jpg, id=49, 903.375pt x 465.99094pt>
+File: forecast.jpg Graphic file (type jpg)
+ <use forecast.jpg>
+Package pdftex.def Info: forecast.jpg used on input line 184.
+(pdftex.def)             Requested size: 271.01524pt x 139.79836pt.
+ [7 <./arch3a.png> <./garch11a.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-[7 <./arch3a.png> <./garch11a.png>]
-Overfull \hbox (46.76012pt too wide) in paragraph at lines 186--187
+[8 <./pre.png> <./forecast.jpg>]
+Overfull \hbox (46.76012pt too wide) in paragraph at lines 192--193
 []\OT1/cmr/m/n/12 Federal Re-serve Sys-tem. https://www.federalreserve.gov/data
 download/Choose.aspx?rel=H10 
  []
@@ -418,63 +423,63 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
-[8 <./pre.png>]
-Overfull \hbox (65.69989pt too wide) in paragraph at lines 210--212
+
+Overfull \hbox (65.69989pt too wide) in paragraph at lines 216--218
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (45.0044pt too wide) in paragraph at lines 217--219
+[9]
+Overfull \hbox (45.0044pt too wide) in paragraph at lines 223--225
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][] 
  []
 
-[9]
-Overfull \hbox (31.2074pt too wide) in paragraph at lines 247--248
+
+Overfull \hbox (31.2074pt too wide) in paragraph at lines 253--254
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (10.5119pt too wide) in paragraph at lines 248--249
+Overfull \hbox (10.5119pt too wide) in paragraph at lines 254--255
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (10.5119pt too wide) in paragraph at lines 249--250
+Overfull \hbox (10.5119pt too wide) in paragraph at lines 255--256
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (3.6134pt too wide) in paragraph at lines 250--251
+Overfull \hbox (3.6134pt too wide) in paragraph at lines 256--257
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (45.0044pt too wide) in paragraph at lines 251--252
+Overfull \hbox (45.0044pt too wide) in paragraph at lines 257--258
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (10.5119pt too wide) in paragraph at lines 252--253
+Overfull \hbox (10.5119pt too wide) in paragraph at lines 258--259
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-
-Overfull \hbox (65.69989pt too wide) in paragraph at lines 257--259
+[10]
+Overfull \hbox (65.69989pt too wide) in paragraph at lines 263--265
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[10] (FDA_Group_Project.aux)
+[11] (FDA_Group_Project.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5038 strings out of 493334
- 63668 string characters out of 3147448
- 200557 words of memory out of 3000000
- 8502 multiletter control sequences out of 15000+200000
+ 5044 strings out of 493334
+ 63750 string characters out of 3147448
+ 203344 words of memory out of 3000000
+ 8506 multiletter control sequences out of 15000+200000
  13040 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,7n,42p,1392b,1723s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -485,9 +490,9 @@ lic/amsfonts/cm/cmex10.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 atex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Latex/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb><D:/Latex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Latex/
 fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on FDA_Group_Project.pdf (12 pages, 236452 bytes).
+Output written on FDA_Group_Project.pdf (13 pages, 250476 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

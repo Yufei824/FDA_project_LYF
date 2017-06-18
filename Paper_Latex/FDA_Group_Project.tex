@@ -165,7 +165,7 @@ r_t &=& 2.0576 + a_t\\
 \end{figure}
 
 \section{Estimation and Result Analysis}
-As the results above, we can find the GARCH(1,1) model have the highest likelihood with the lowest AIC and BIC, while the considering the alpha, ARCH1 model is also appropriate. Further, Ljung box test is needed to decide which model is better. Ljung box test can be used to test the validity of the mean equation and the volatility equation by checking the autocorrelation between the standardized residuals. If p value is less than 0.05, we can reject the null hypothesis, seeing the model is appropriate. As we can see from the results, GARCH(1,1) model is suitable for the volatility and mean equation.
+As the results above, we can find the GARCH(1,1) model have the highest likelihood with the lowest AIC and BIC, while the considering the alpha, ARCH1 model is also appropriate. Further, Ljung box test is needed to decide which model is better. If p value is less than 0.05, we can reject the null hypothesis, seeing the model is appropriate. As we can see from the results, GARCH(1,1) model is suitable for the volatility and mean equation.
 
 Here is the prediction we made
 \begin{figure}[h!]
@@ -176,11 +176,16 @@ Here is the prediction we made
 \end{figure}
 
 
-\section{Conclusions}\label{conclusions}
-While what really disappoint us is that the forecast is not consistent with the actual value
-Having seen from the result, the test results showed the detection model did not possesses preferable practicability. The exchange rate volatility shows the forecast result is not consistent with the actual series in GARCH model.
-This method have error, which might be the factor that make the estimate result is not pretty ideal. According to the analysis, we can see the exchange rate fluctuated remarkably, which is not normal distribution. According to the results, it seems infeasible to use this model to predict the exchange rate revealing the upward tendency for the CNY. Along with the SDR(Special Drawing Right), CNY gradually move in the line with the trend of the international financial market, while the non-stationary means it still needs to take measures to prevent the risk of the sharp appreciation and depreciation.\\
+\section{Conclusions}
+While what really disappoint us is that the forecast is not consistent with the actual value, shown as figure \ref{volatility}.Having seen from the result, the test results showed the detection model did not possesses preferable practicability. The exchange rate volatility shows the forecast result is not consistent with the actual series in GARCH model.\\
+\begin{figure}[h!]
+\begin{center}
+\caption{}\label{volatility}
+\includegraphics[width=0.6\textwidth]{forecast.jpg}
+\end{center}
+\end{figure}
 
+This method have error, which might be the factor that make the estimate result is not pretty ideal. According to the analysis, we can see the exchange rate fluctuated remarkably, which is not normal distribution. According to the results, it seems infeasible to use this model to predict the exchange rate revealing the upward tendency for the CNY. Along with the SDR(Special Drawing Right), CNY gradually move in the line with the trend of the international financial market, while the non-stationary means it still needs to take measures to prevent the risk of the sharp appreciation and depreciation.\\
 
 \begin{thebibliography}{9}
 \bibitem{}  Fang-Mei Tseng,Gwo-Hshiung Tzeng,Hsiao-Cheng Yu,Benjamin J. C. Yuan. Fuzzy ARIMA model for forecasting the foreign exchange market.[J]. Fuzzy Sets and Systems,2001,118:.
