@@ -17,14 +17,14 @@ library(TSA)
 library(fUnitRoots)
 library(forecast)
 
-data <- read_excel("D:/Junior/GitHub/FDA_project_LYF/Data/MonthlyData.xls")
+data <- read_excel("../Data/MonthlyData.xls") # use relative path
 
 head(data)
 dim(data)
 
 plot(data,type="l")
 
-da <- read_excel("D:/Junior/GitHub/FDA_project_LYF/Data/DailyData.xlsx")
+da <- read_excel("../Data/DailyData.xlsx") # use relative path
 
 head(da)
 dim(da)
